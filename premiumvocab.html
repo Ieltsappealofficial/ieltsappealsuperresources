@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTSAppeal - Master IELTS in 20 Days</title>
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        /* Add your custom styles here */
+        .gradient-bg {
+            background: linear-gradient(135deg, #EEF2FF 0%, #ffffff 100%);
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+
+        .feature-card:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-color: #93C5FD;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen gradient-bg">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <h1 class="text-2xl font-bold italic">
+                        <span class="text-red-600">IELTS</span><span class="text-green-600">APPEAL</span>.Store
+                    </h1>
+                </div>
+                <a href="https://rzp.io/rzp/ITU0q4f" target="_blank"
+                    class="px-4 py-2 border border-orange-500 text-white bg-orange-500 rounded hover:bg-orange-600 hover:border-orange-600">
+                    Download Now!
+                </a>
+            </div>
+        </div>
+        <!-- Timer Section -->
+        <div class="bg-green-100 text-green-800 text-center py-3">
+            <p class="font-semibold">
+                Christmas Sale! Get ~30% OFF on bundle purchases.
+                Offer ends in
+                <span id="countdown" class="font-bold text-green-900"></span>.
+            </p>
+        </div>
+    </header>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const saleEndDate = new Date("December 25, 2024 23:59:59 GMT");
+            const now = new Date();
+
+            const timeDiff = saleEndDate - now;
+
+            if (timeDiff <= 0) {
+                document.getElementById("countdown").textContent = "Offer Expired";
+                return;
+            }
+
+            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").textContent =
+                `${days} days ${hours}h ${minutes}m ${seconds}s`;
+        }
+
+        // Update timer every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 py-2">
+        <div class="bg-blue-100 p-4 rounded-lg text-blue-700">
+            <p class="text-xs">IELTS is the most recognized international English test for academic and immigration
+                purposes. It is a trusted language test, accepted in over 150 countries.</p>
+        </div>
+        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-1">
+            <div class="flex items-center">
+                <span class="material-icons text-yellow-600 mr-2">campaign</span>
+                <p class="font-medium">Special Launch: Get the Vocabulary Tracker Tool FREE with Improvement Analytics
+                    (Worth $19)</p>
+            </div>
+        </div>
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                Master the Essential Only 570 IELTS Vocabulary List
+                <br class="hidden md:block">
+                you will ever need!
+            </h2>
+            <p class="text-xl text-gray-600">
+                Innovatively curated & validated over years for Maximum Impact!
+            </p>
+        </div>
+        <!-- Features Grid -->
+        <div class="grid md:grid-cols-2 gap-8 items-center mb-16">
+            <div class="space-y-4">
+                <div class="flex items-start space-x-3 feature-card p-4 rounded-lg">
+                    <span class="material-icons text-green-500">check_circle</span>
+                    <p>Handpicked words from actual IELTS exams</p>
+                </div>
+                <div class="flex items-start space-x-3 feature-card p-4 rounded-lg">
+                    <span class="material-icons text-green-500">check_circle</span>
+                    <p>Innovative story-based memorization technique</p>
+                </div>
+                <div class="flex items-start space-x-3 feature-card p-4 rounded-lg">
+                    <span class="material-icons text-green-500">check_circle</span>
+                    <p>Interactive Word Tracker for progress monitoring</p>
+                </div>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-lg">
+                <img src="https://firebasestorage.googleapis.com/v0/b/ieltsappeal-f000c.appspot.com/o/landing%20page%2Fvoca.png?alt=media&token=48eb1282-3a08-4cf0-b9ed-d6fa38607eb5"
+                    alt="PDF Preview" class="rounded shadow-lg w-full" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Format Section -->
+    <section class="bg-gray-300 py-8">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-8">
+                Innovative Learning Format
+            </h3>
+            <div class="p-6 bg-orange-400 rounded-lg shadow-lg max-w-2xl mx-auto">
+                <h4 class="text-lg font-semibold mb-4">Sample Format:</h4>
+                <div class="space-y-4">
+                    <div class="border-b pb-2">
+                        <span class="font-bold">Aberration</span>
+                        <span class="text-gray-600">/ab-uh-RAY-shun/</span>
+                        <span class="text-blue-600">(n)</span>
+                        <p class="text-sm mt-1">
+                            <span class="font-medium">Meaning:</span> A departure from what is normal or expected
+                        </p>
+                        <p class="text-sm">
+                            <span class="font-medium">Synonyms:</span> deviation, anomaly, irregularity
+                        </p>
+                        <p class="text-sm">
+                            <span class="font-medium">Antonyms:</span> normality, standard
+                        </p>
+                        <p class="text-sm">
+                            <span class="font-medium">Variations:</span> aberrational (adj)
+                        </p>
+                        <p class="text-sm italic">
+                            "The unusual weather pattern was an aberration from the typical climate."
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-4 bg-blue-50 p-4 rounded">
+                    <p class="text-sm italic text-blue-800">
+                        <span class="font-medium">Story connecting words 1-10:</span>
+                        A short engaging answer to the real IELTS Question...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl font-bold text-center mb-12">Why Trust Our Expertise?</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="feature-card p-6 rounded-lg text-center hover-scale">
+                    <span class="material-icons text-yellow-500 text-4xl mb-4">star</span>
+                    <h4 class="text-lg font-semibold mb-2">Years of Research</h4>
+                    <p>Each word carefully selected based on IELTS patterns</p>
+                </div>
+                <div class="feature-card p-6 rounded-lg text-center hover-scale">
+                    <span class="material-icons text-blue-500 text-4xl mb-4">psychology</span>
+                    <h4 class="text-lg font-semibold mb-2">Memory-Optimized</h4>
+                    <p>Format designed for quick memorization and retention</p>
+                </div>
+                <div class="feature-card p-6 rounded-lg text-center hover-scale">
+                    <span class="material-icons text-green-500 text-4xl mb-4">track_changes</span>
+                    <h4 class="text-lg font-semibold mb-2">2000+ Success Stories</h4>
+                    <p>Trusted by thousands of IELTS aspirants</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proven Vocabulary Transformation Section -->
+    <section class="bg-blue-50 py-12 px-4 text-center">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-blue-800 mb-6">
+                Proven Vocabulary Transformation
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-4">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-green-600 mb-4">
+                            70-80% Speaking & Writing Improvement!
+                        </h3>
+                        <p class="text-gray-700">
+                            Students using our targeted vocabulary list have consistently demonstrated dramatic
+                            improvements in IELTS Speaking and Writing sections within just 20-30 days as it covers the
+                            high value and almost all the important words for converstaion.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <svg class="w-full" viewBox="0 0 400 250">
+                        <polyline points="0,250 100,150 200,75 300,35" fill="none" stroke="#10B981" stroke-width="3" />
+                        <text x="0" y="240" class="text-sm fill-gray-600">Start (%)</text>
+                        <text x="90" y="160" class="text-sm fill-gray-600">5 Days (40%)</text>
+                        <text x="190" y="85" class="text-sm fill-gray-600">10 Days (60%)</text>
+                        <text x="290" y="45" class="text-sm fill-gray-600">25 Days (80%)</text>
+                    </svg>
+                </div>
+            </div>
+            <div class="text-sm text-blue-800 mb-6 flex flex-col items-center">
+                <div class="flex items-center mb-2">
+                    <span class="text-green-600 text-lg mr-2">✔</span>
+                    Expertly curated
+                </div>
+                <div class="flex items-center mb-2">
+                    <span class="text-green-600 text-lg mr-2">✔</span>
+                    Contextual learning approach
+                </div>
+                <div class="flex items-center">
+                    <span class="text-green-600 text-lg mr-2">✔</span>
+                    Proven methodology
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="bg-white rounded-lg shadow p-4 relative">
+        <span class="absolute top-2 right-2 bg-purple-500 text-white text-xs px-3 py-1 rounded-md">Most Purchased</span>
+        <div class="overflow-hidden rounded-md mb-4">
+            <div class="w-full h-40 object-cover rounded-md bg-purple-50 flex items-center justify-center">
+                <span class="material-icons text-purple-600" style="font-size: 100px;">auto_stories</span>
+            </div>
+        </div>
+        <div class="flex flex-col">
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">570 Premium IELTS Vocabulary List</h3>
+            <p class="text-gray-600 text-sm mb-4">Master Vocabulary for High Band Score</p>
+            <div class="text-xl font-bold text-green-600 mb-4">$3</div>
+            <a href="https://rzp.io/rzp/MIgQPRQ4" target="_blank"
+                class="w-full text-center py-2 text-white bg-orange-500 hover:bg-orange-600 rounded-lg mb-4">
+                Get it Now
+            </a>
+            <button id="toggle-vocab-info"
+                class="w-full text-blue-600 font-bold text-sm flex justify-between items-center py-2">
+                <span>Read More About the item</span>
+                <span class="material-icons">expand_more</span>
+            </button>
+            <div id="vocab-info" class="hidden mt-2 text-gray-600">
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-center">
+                        <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                        Handpicked 570 Most Frequently Used IELTS Vocabulary
+                    </li>
+                    <li class="flex items-center">
+                        <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                        Carefully Curated by IELTS Experts for Maximum Impact
+                    </li>
+                    <li class="flex items-center">
+                        <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                        Proven Memory Retention Techniques
+                    </li>
+                    <li class="flex items-center">
+                        <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                        Visual Representation for Enhanced Learning
+                    </li>
+                    <li class="flex items-center">
+                        <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                        Real IELTS Questions Demonstrating Vocabulary Usage
+                    </li>
+                    <li class="flex items-center">
+                        <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                        Easy to Remember Mnemonic Techniques
+                    </li>
+                    <li class="flex items-center">
+                        <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                        Guaranteed Improvement in Vocabulary Score
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Choose Your IELTS Super Material Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center">Choose Your IELTS Super Material</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Free Product: Free Vocab guide -->
+                <div class="bg-white rounded-lg shadow p-4 relative">
+                    <span
+                        class="absolute top-2 right-2 bg-green-500 text-white text-xs px-3 py-1 rounded-md">Free</span>
+                    <div class="overflow-hidden rounded-md mb-4">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/ieltsappeal-f000c.appspot.com/o/landing%20page%2Fvocab1.png?alt=media&token=8504a1cb-691f-412e-8fbc-79d4ffb14980"
+                            alt="570 Ieltsappeal vocab list" class="w-full h-40 object-cover rounded-md" />
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">IELTS Speaking Vocabulary Guide.</h3>
+                        <p class="text-gray-600 text-sm mb-4">Premium Speaking Preparation Material</p>
+                        <div class="text-xl font-bold text-blue-600 mb-4">
+                            <span class="line-through text-red-400">$3</span> Free
+                        </div>
+                        <a href="https://firebasestorage.googleapis.com/v0/b/ieltsappeal-f000c.appspot.com/o/pdf%20material%2FIeltsappeal%20Speaking%20Guide%20Free.pdf?alt=media&token=b966d49e-2788-465c-87aa-4852b52baa24"
+                            target="_blank"
+                            class="w-full text-center py-2 text-white bg-orange-500 hover:bg-orange-600 rounded-lg mb-4">
+                            Free Download!
+                        </a>
+                        <button id="toggle-speakingvocab-info"
+                            class="w-full text-blue-600 font-bold text-sm flex justify-between items-center py-2">
+                            <span>Read More About the item</span>
+                            <span class="material-icons">expand_more</span>
+                        </button>
+                        <div id="speakingvocab-info" class="hidden mt-2 text-gray-600">
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    1 Super templates to answer any question like native speakers.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Simple tips to learn, remember and retain Vocabs faster.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Situational Phrases for all three parts.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Guide to Avoidance and Use of Fillers
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Most common Topic-wise Vocab list with Tips to learn and retain vocabs faster.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- IELTS Speaking Guide -->
+                <div class="bg-white rounded-lg shadow p-4 relative">
+                    <span class="absolute top-2 right-2 bg-purple-500 text-white text-xs px-3 py-1 rounded-md">Best
+                        Guide</span>
+                    <div class="overflow-hidden rounded-md mb-4">
+                        <div class="w-full h-40 object-cover rounded-md bg-gray-100 flex items-center justify-center">
+                            <span class="material-icons text-gray-500" style="font-size: 80px;">record_voice_over</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Complete IELTS SPEAKING Guide</h3>
+                        <p class="text-gray-600 text-sm mb-4">Comprehensive Speaking Preparation</p>
+                        <div class="text-xl font-bold text-green-600 mb-4">$3</div>
+                        <a href="https://rzp.io/rzp/PV0GlJYV" target="_blank"
+                            class="w-full text-center py-2 text-white bg-orange-500 hover:bg-orange-600 rounded-lg mb-4">
+                            Get it Now
+                        </a>
+                        <button id="toggle-speaking-info"
+                            class="w-full text-blue-600 font-bold text-sm flex justify-between items-center py-2">
+                            <span>Read More About the item</span>
+                            <span class="material-icons">expand_more</span>
+                        </button>
+                        <div id="speaking-info" class="hidden mt-2 text-gray-600">
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    4 Super templates to answer any question like native speakers.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    December/January Prediction with 80 percent Accuracy.
+                                </li>
+
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Situational Phrases for all three part.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Guide to Avoidance and Use of Fillers
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Most common Topic-wise Vocab list with Tips to learn and retain vocabs faster.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    15 Common mistakes and its 9 band solution
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Guided audio Manifestation and visualization for confidence building.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IELTS Writing Guide -->
+                <div class="bg-white rounded-lg shadow p-4 relative">
+                    <span
+                        class="absolute top-2 right-2 bg-blue-500 text-white text-xs px-3 py-1 rounded-md">Essential</span>
+                    <div class="overflow-hidden rounded-md mb-4">
+                        <div class="w-full h-40 object-cover rounded-md bg-gray-100 flex items-center justify-center">
+                            <span class="material-icons text-gray-500" style="font-size: 80px;">edit_note</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Complete IELTS Writing Guide</h3>
+                        <p class="text-gray-600 text-sm mb-4">Master Task 1 & 2 Writing</p>
+                        <div class="text-xl font-bold text-green-600 mb-4">$3</div>
+                        <a href="https://rzp.io/rzp/T8Jr7JV" target="_blank"
+                            class="w-full text-center py-2 text-white bg-orange-500 hover:bg-orange-600 rounded-lg mb-4">
+                            Get it Now
+                        </a>
+                        <button id="toggle-writing-info"
+                            class="w-full text-blue-600 font-bold text-sm flex justify-between items-center py-2">
+                            <span>Read More About the item</span>
+                            <span class="material-icons">expand_more</span>
+                        </button>
+                        <div id="writing-info" class="hidden mt-2 text-gray-600">
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    2 Super Structures/Template to answer any question With real question/answer and
+                                    strategy.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    December/January Prediction with 80 percent Accuracy.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    40 Latest & Repeated Question Sets to cover all Question type. Task 1 & Task 2.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    HIgh value Phrases and linking words for quality essay.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Most common Topic-wise Vocab list with Tips to learn and retain vocabs faster.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    15 common mistakes and their 9 band solutions.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IELTS Reading Guide -->
+                <div class="bg-white rounded-lg shadow p-4 relative">
+                    <span class="absolute top-2 right-2 bg-red-500 text-white text-xs px-3 py-1 rounded-md">Strategy
+                        Guide</span>
+                    <div class="overflow-hidden rounded-md mb-4">
+                        <div class="w-full h-40 object-cover rounded-md bg-gray-100 flex items-center justify-center">
+                            <span class="material-icons text-gray-500" style="font-size: 80px;">menu_book</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Complete IELTS Reading Guide</h3>
+                        <p class="text-gray-600 text-sm mb-4">Master All Reading Question Types</p>
+                        <div class="text-xl font-bold text-green-600 mb-4">$3</div>
+                        <a href="https://rzp.io/rzp/gw7oT8sn" target="_blank"
+                            class="w-full text-center py-2 text-white bg-orange-500 hover:bg-orange-600 rounded-lg mb-4">
+                            Get it Now
+                        </a>
+                        <button id="toggle-reading-info"
+                            class="w-full text-blue-600 font-bold text-sm flex justify-between items-center py-2">
+                            <span>Read More About the item</span>
+                            <span class="material-icons">expand_more</span>
+                        </button>
+                        <div id="reading-info" class="hidden mt-2 text-gray-600">
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    20 Latest Question Sets. All queation types covered.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Super Tricks and Strategies to finish reading within 40-50 mins.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    List of Common and Repeated Topicwise vocabs list.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    15 time killing mistakes and their 9 band solutions.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IELTS Listening Guide -->
+                <div class="bg-white rounded-lg shadow p-4 relative">
+                    <span
+                        class="absolute top-2 right-2 bg-teal-500 text-white text-xs px-3 py-1 rounded-md">Essential</span>
+                    <div class="overflow-hidden rounded-md mb-4">
+                        <div class="w-full h-40 object-cover rounded-md bg-teal-50 flex items-center justify-center">
+                            <span class="material-icons text-teal-600" style="font-size: 100px;">headphones</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Complete IELTS Listening Guide</h3>
+                        <p class="text-gray-600 text-sm mb-4">Master All Listening Question Types</p>
+                        <div class="text-xl font-bold text-green-600 mb-4">$3</div>
+                        <a href="https://rzp.io/rzp/8sBCBkz" target="_blank"
+                            class="w-full text-center py-2 text-white bg-orange-500 hover:bg-orange-600 rounded-lg mb-4">
+                            Get it Now
+                        </a>
+                        <button id="toggle-listening-info"
+                            class="w-full text-blue-600 font-bold text-sm flex justify-between items-center py-2">
+                            <span>Read More About the item</span>
+                            <span class="material-icons">expand_more</span>
+                        </button>
+                        <div id="listening-info" class="hidden mt-2 text-gray-600">
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    30 Latest Question Sets. All queation types covered.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Super Tricks and Strategies to Answer Accurately.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    List of Common and Repeated Topicwise vocabs list for better answer identification.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    15 silly mistakes and their 9 band solutions.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Easy and Common Idioms -->
+                <div class="bg-white rounded-lg shadow p-4 relative">
+                    <span
+                        class="absolute top-2 right-2 bg-indigo-500 text-white text-xs px-3 py-1 rounded-md">Popular</span>
+                    <div class="overflow-hidden rounded-md mb-4">
+                        <div class="w-full h-40 object-cover rounded-md bg-indigo-50 flex items-center justify-center">
+                            <span class="material-icons text-indigo-600" style="font-size: 100px;">translate</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Easy and Common Idioms</h3>
+                        <p class="text-gray-600 text-sm mb-4">60 Handpicked Idioms for IELTS</p>
+                        <div class="text-xl font-bold text-green-600 mb-4">$1</div>
+                        <a href="https://rzp.io/rzp/r2ROx2A" target="_blank"
+                            class="w-full text-center py-2 text-white bg-orange-500 hover:bg-orange-600 rounded-lg mb-4">
+                            Get it Now
+                        </a>
+                        <button id="toggle-idioms-info"
+                            class="w-full text-blue-600 font-bold text-sm flex justify-between items-center py-2">
+                            <span>Read More About the item</span>
+                            <span class="material-icons">expand_more</span>
+                        </button>
+                        <div id="idioms-info" class="hidden mt-2 text-gray-600">
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    60 handpicked, very common and easy to use idioms
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    speaking and writing with Examples and Contexts
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Visually Interesting Representation
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Quick learning Approach
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practice Question Bank -->
+                <div class="bg-white rounded-lg shadow p-4 relative">
+                    <span class="absolute top-2 right-2 bg-yellow-500 text-white text-xs px-3 py-1 rounded-md">Practice
+                        Set</span>
+                    <div class="overflow-hidden rounded-md mb-4">
+                        <div class="w-full h-40 object-cover rounded-md bg-yellow-50 flex items-center justify-center">
+                            <span class="material-icons text-yellow-600" style="font-size: 100px;">quiz</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Practice Question Bank</h3>
+                        <p class="text-gray-600 text-sm mb-4">Practice Sets for each Sections</p>
+                        <div class="text-xl font-bold text-green-600 mb-4">$2</div>
+                        <a href="https://rzp.io/rzp/nY5HAfPx" target="_blank"
+                            class="w-full text-center py-2 text-white bg-orange-500 hover:bg-orange-600 rounded-lg mb-4">
+                            Get it Now
+                        </a>
+                        <button id="toggle-practice-info"
+                            class="w-full text-blue-600 font-bold text-sm flex justify-between items-center py-2">
+                            <span>Read More About the item</span>
+                            <span class="material-icons">expand_more</span>
+                        </button>
+                        <div id="practice-info" class="hidden mt-2 text-gray-600">
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Practice Sets with Answer Key
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Practice Sets for All Sections
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Speaking Practice cue cards
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IELTS Prediction -->
+                <div class="bg-white rounded-lg shadow p-4 relative">
+                    <span
+                        class="absolute top-2 right-2 bg-pink-500 text-white text-xs px-3 py-1 rounded-md">Prediction</span>
+                    <div class="overflow-hidden rounded-md mb-4">
+                        <div class="w-full h-40 object-cover rounded-md bg-pink-50 flex items-center justify-center">
+                            <span class="material-icons text-pink-600" style="font-size: 100px;">trending_up</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">IELTS Prediction</h3>
+                        <p class="text-gray-600 text-sm mb-4">Speaking & Writing Prediction</p>
+                        <div class="text-xl font-bold text-green-600 mb-4">$2</div>
+                        <a href="https://rzp.io/rzp/aYdrcXeD" target="_blank"
+                            class="w-full text-center py-2 text-white bg-orange-500 hover:bg-orange-600 rounded-lg mb-4">
+                            Get it Now
+                        </a>
+                        <button id="toggle-prediction-info"
+                            class="w-full text-blue-600 font-bold text-sm flex justify-between items-center py-2">
+                            <span>Read More About the item</span>
+                            <span class="material-icons">expand_more</span>
+                        </button>
+                        <div id="prediction-info" class="hidden mt-2 text-gray-600">
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    December Prediction
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    January Prediction
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Speaking & Writing Focused
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    80 % Accuracy
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IELTS Speaking 1:1 Mock Test with Analysis -->
+                <div class="bg-white rounded-lg shadow p-4 relative">
+                    <span
+                        class="absolute top-2 right-2 bg-purple-500 text-white text-xs px-3 py-1 rounded-md">Premium</span>
+                    <div class="overflow-hidden rounded-md mb-4">
+                        <div class="w-full h-40 object-cover rounded-md bg-purple-50 flex items-center justify-center">
+                            <span class="material-icons text-purple-600" style="font-size: 100px;">headset_mic</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">IELTS Speaking 1:1 Mock Test with Analysis
+                        </h3>
+                        <p class="text-gray-600 text-sm mb-4">Improve your speaking skills and receive detailed
+                            feedback.</p>
+                        <div class="text-xl font-bold text-green-600 mb-4">$5</div>
+                        <a href="https://rzp.io/rzp/gySG0vNd" target="_blank"
+                            class="w-full text-center py-2 text-white bg-orange-500 hover:bg-orange-600 rounded-lg mb-4">Get
+                            Started</a>
+                        <button id="toggle-speakingmock-info"
+                            class="w-full text-blue-600 font-bold text-sm flex justify-between items-center py-2">
+                            <span>Learn More</span>
+                            <span class="material-icons">expand_more</span>
+                        </button>
+                        <div id="speakingmock-info" class="hidden mt-2 text-gray-600">
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    2 1:1 online speaking tests with a certified IELTS tutor.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Comprehensive analysis and feedback on your performance.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Personalized tips and strategies to improve your speaking skills.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Gain confidence and practice real-exam conditions.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Receive a detailed report with areas for improvement.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Enhance your fluency, vocabulary, and overall speaking ability.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Expert guidance from Drompsone, an experienced IELTS tutor.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full Bundle -->
+                <div class="bg-white rounded-lg shadow p-4 relative">
+                    <span class="absolute top-2 right-2 bg-green-600 text-white text-xs px-3 py-1 rounded-md">Best
+                        Value</span>
+                    <div class="overflow-hidden rounded-md mb-4">
+                        <div class="w-full h-40 object-cover rounded-md bg-green-50 flex items-center justify-center">
+                            <span class="material-icons text-green-600" style="font-size: 100px;">work</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Complete IELTS Bundle</h3>
+                        <p class="text-gray-600 text-sm mb-4">Full Comprehensive Package</p>
+                        <div class="text-xl font-bold text-yellow-600 mb-4">$11</div>
+                        <a href="https://rzp.io/rzp/ITU0q4f" target="_blank"
+                            class="w-full text-center py-2 text-white bg-orange-500 hover:bg-orange-600 rounded-lg mb-4">
+                            Get it Now
+                        </a>
+                        <button id="toggle-bundle-info"
+                            class="w-full text-blue-600 font-bold text-sm flex justify-between items-center py-2">
+                            <span>Read More About the item</span>
+                            <span class="material-icons">expand_more</span>
+                        </button>
+                        <div id="bundle-info" class="hidden mt-2 text-gray-600">
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    All IELTS Appeal Materials
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    20 Days Roadmap
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Step-by-Step Guide
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Personal Metorship with 24 x 7 Whatsapp Support
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Only Preparation Material you will ever need.
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Totally Designed for Self Preparation
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>
+                                    Most Affordable IELTS preparation on Internet Guaranteed.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="payment-security-section bg-gray-50 rounded-lg p-2 mt-8 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">100% Secure Payment</h3>
+            <p class="text-gray-600 mb-6">Your transaction is protected with state-of-the-art encryption and security
+                measures</p>
+            <div class="security-badges flex justify-center items-center space-x-6">
+                <!-- Security Icons -->
+                <div class="security-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                        stroke="#2ecc71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                    <span class="text-xs text-gray-600 block mt-2">SSL Secured</span>
+                </div>
+                <div class="security-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                        stroke="#3498db" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                    </svg>
+                    <span class="text-xs text-gray-600 block mt-2">256-bit Encryption</span>
+                </div>
+                <div class="security-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                        stroke="#e74c3c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                    <span class="text-xs text-gray-600 block mt-2">PCI DSS Compliant</span>
+                </div>
+            </div>
+            <p class="text-xs text-gray-500 mt-4">Your privacy and security are our top priorities</p>
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-4 py-12">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">What Our Students Say</h2>
+            <p class="text-gray-600">Requested success stories from our Aspirants after using our materials</p>
+        </div>
+        <div class="relative">
+            <!-- Carousel Container -->
+            <div class="overflow-hidden relative">
+                <!-- Carousel Inner -->
+                <div id="carousel-inner" class="flex transition-transform duration-500 ease-in-out">
+                    <!-- Testimonial slides will be dynamically populated by JavaScript -->
+                </div>
+                <!-- Navigation Buttons -->
+                <div class="absolute inset-y-0 flex items-center justify-between w-full z-10">
+                    <button id="prev-btn" class="p-2 bg-white/50 rounded-full shadow-md hover:bg-white/75 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M11 17l-5-5m0 0l5-5m-5 5h12" />
+                        </svg>
+                    </button>
+                    <button id="next-btn" class="p-2 bg-white/50 rounded-full shadow-md hover:bg-white/75 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Indicators -->
+                <div id="carousel-indicators" class="flex justify-center space-x-2 mt-4">
+                    <!-- Indicators will be dynamically populated by JavaScript -->
+                </div>
+            </div>
+    </section>
+
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">Why Choose This Premium Guide?</h2>
+                <p class="text-gray-600 text-sm max-w-2xl mx-auto">Unlock Your IELTS Potential with Our Expertly Crafted
+                    Preparation Strategy</p>
+            </div>
+
+            <div class="grid gap-4">
+                <div
+                    class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group flex items-center">
+                    <div
+                        class="bg-orange-100 text-orange-600 w-10 h-10 rounded-full flex items-center justify-center mr-4 group-hover:bg-orange-200 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-gray-800 mb-1">Designed by Experts</h3>
+                        <p class="text-xs text-gray-600">Developed by experienced IELTS professionals who understand
+                            quick preparation strategies.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group flex items-center">
+                    <div
+                        class="bg-green-100 text-green-600 w-10 h-10 rounded-full flex items-center justify-center mr-4 group-hover:bg-green-200 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.768-.231-1.478-.632-2.187m0 0A5.002 5.002 0 009 6a5 5 0 00-5 5c0 1.726.894 3.294 2.356 4.143M12 14v4m0-4a4 4 0 01-4-4V4h8v6a4 4 0 01-4 4z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-gray-800 mb-1">Innovatively Curated</h3>
+                        <p class="text-xs text-gray-600">Tailored to include only the most essential and effective
+                            strategies to save you time.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group flex items-center">
+                    <div
+                        class="bg-blue-100 text-blue-600 w-10 h-10 rounded-full flex items-center justify-center mr-4 group-hover:bg-blue-200 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-gray-800 mb-1">Handpicked Resources</h3>
+                        <p class="text-xs text-gray-600">Focused on what you truly need to excel in the exam from years
+                            of experience.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group flex items-center">
+                    <div
+                        class="bg-purple-100 text-purple-600 w-10 h-10 rounded-full flex items-center justify-center mr-4 group-hover:bg-purple-200 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-gray-800 mb-1">Self-Sufficient Preparation</h3>
+                        <p class="text-xs text-gray-600">Perfectly suited for independent learners who want to take
+                            charge of their own success.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group flex items-center">
+                    <div
+                        class="bg-red-100 text-red-600 w-10 h-10 rounded-full flex items-center justify-center mr-4 group-hover:bg-red-200 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-gray-800 mb-1">Achieve Mastery in 20 Days</h3>
+                        <p class="text-xs text-gray-600">A structured plan that guarantees measurable progress in less
+                            than a month.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group flex items-center">
+                    <div
+                        class="bg-green-100 text-green-600 w-10 h-10 rounded-full flex items-center justify-center mr-4 group-hover:bg-green-200 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-gray-800 mb-1">Trusted by Thousands</h3>
+                        <p class="text-xs text-gray-600">Proven track record with success stories from learners across
+                            the globe.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group flex items-center">
+                    <div
+                        class="bg-blue-100 text-blue-600 w-10 h-10 rounded-full flex items-center justify-center mr-4 group-hover:bg-blue-200 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-gray-800 mb-1">Proven Success Strategies</h3>
+                        <p class="text-xs text-gray-600">Backed by real results and testimonials from previous
+                            test-takers.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group flex items-center">
+                    <div
+                        class="bg-purple-100 text-purple-600 w-10 h-10 rounded-full flex items-center justify-center mr-4 group-hover:bg-purple-200 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-gray-800 mb-1">Comprehensive Yet Focused</h3>
+                        <p class="text-xs text-gray-600">Covers every section of the IELTS exam without overwhelming
+                            you.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group flex items-center">
+                    <div
+                        class="bg-yellow-100 text-yellow-600 w-10 h-10 rounded-full flex items-center justify-center mr-4 group-hover:bg-yellow-200 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-gray-800 mb-1">Affordable Excellence</h3>
+                        <p class="text-xs text-gray-600">High-quality preparation materials at a fraction of the cost of
+                            coaching classes.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="py-4 bg-gray-100 text-center">
+        <p class="text-2xl font-bold text-gray-800">
+            Our Commitment!
+        </p>
+        <p class="text-sm font-semibold text-orange-600">
+            Your success is our top priority; we'll support you until you achieve your desired band and satisfied!
+        </p>
+    </section>
+
+    <script>
+        document.querySelectorAll('[id^="toggle-product"]').forEach(button => {
+            button.addEventListener('click', () => {
+                const infoId = button.id.replace('toggle-', '');
+                const infoElement = document.getElementById(infoId);
+                infoElement.classList.toggle('hidden');
+            });
+        });
+
+        // Add this part to handle the dropdowns for all product items
+        document.querySelectorAll('[id^="toggle-product"]').forEach(button => {
+            button.addEventListener('click', () => {
+                const infoId = button.id.replace('toggle-', '');
+                const infoElement = document.getElementById(infoId);
+                infoElement.classList.toggle('hidden');
+            });
+        });
+
+        // Add this part to handle the dropdowns for all other product items
+        document.querySelectorAll('[id^="toggle-speaking"], [id^="toggle-speakingvocab"], [id^="toggle-writing"], [id^="toggle-reading"], [id^="toggle-listening"], [id^="toggle-idioms"], [id^="toggle-practice"], [id^="toggle-prediction"], [id^="toggle-bundle"]').forEach(button => {
+            button.addEventListener('click', () => {
+                const infoId = button.id.replace('toggle-', '');
+                const infoElement = document.getElementById(infoId);
+                infoElement.classList.toggle('hidden');
+            });
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <p class="text-xs">© 2024 IELTSAppeal. All rights reserved.</p>
+            </div>
+            <div class="text-[6px] leading-tight text-gray-500 max-w-4xl mx-auto">
+                <h6 class="mb-1 text-[10px]">Terms and Conditions:</h6>
+                <p class="text-xs">
+                    By accessing and using the IELTSAppeal material and associated tools ("Products"), you agree to be
+                    bound
+                    by these Terms and Conditions. The Products are provided "as is" without Guarantee of any kind,
+                    either
+                    express or implied. IELTSAppeal reserves the right to modify, suspend, or discontinue the Products
+                    at
+                    any time without notice. Your use of the Products is subject to our Privacy Policy and acceptable
+                    use
+                    guidelines. The vocabulary content, including words, definitions, examples, Strategies, tips, tricks
+                    and
+                    examples are protected by copyright and intellectual property laws. Sharing, redistributing, or
+                    reselling the Products without out knowledge is strictly prohibited. Performance results may vary
+                    based
+                    on individual effort and learning capacity. The Partial Refund is subject to our refund policy
+                    terms.
+                    Updates to the Products are provided at our discretion. Word Tracker tool access is contingent upon
+                    maintaining an active account. IELTSAppeal is not affiliated with, endorsed by, or licensed by IELTS
+                    or
+                    its governing bodies. IELTS is a registered trademark. By purchasing, you acknowledge that you have
+                    read, understood, and agreed to these terms. Please reach at ieltsappealhelp@gmail.com for any
+                    payment
+                    related query!
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Carousel Script -->
+    <script>
+        const testimonials = [
+            {
+                name: "Rajani K",
+                country: "India",
+                score: "Band 7.5",
+                comment: "This vocabulary guide was exactly what I needed, Otherwise i would have kept on downloading random vocab list from internet.The memorization technique was actually helpful."
+            },
+            {
+                name: "Juan M.",
+                country: "Spain",
+                score: "Band 8.0",
+                comment: "Your word organization and representation are incredible! It helped me remember words quickly, just like a Tesla Starship. Thanks a lot!"
+            },
+            {
+                name: "Emma L.",
+                country: "Canada",
+                score: "Band 7.0",
+                comment: "I was struggling with academic writing, but this resource changed the game. The mistakes and solution part saved my life. I started using only this guide after I got it."
+            },
+            {
+                name: "Aisha R.",
+                country: "India",
+                score: "Band 7.5",
+                comment: "Kudos to you! Your unique approach to remembering vocabulary has made a huge difference. As a non-native speaker, I now feel more confident. Thanks again!"
+            },
+            {
+                name: "Asmara",
+                country: "Indonesia",
+                score: "Band 8.5",
+                comment: "The systematic learning approach with real-world examples is exceptional. It made a huge difference in my IELTS preparation. Highly recommended for anyone serious about improving!"
+            },
+            {
+                name: "Emily Johnson",
+                country: "Canada",
+                score: "Band 8.5",
+                comment: "The speaking mock test and personalized feedback were invaluable. I felt more confident and prepared for my IELTS exam. Thank you, IELTS Appeal!"
+            },
+            {
+                name: "Sarah Williams",
+                country: "USA",
+                score: "Band 8.0",
+                comment: "The IELTS Prediction product was spot on! It helped me focus my studies and save time. I felt more confident and achieved a great score. Highly recommended!"
+            },
+            {
+                name: "Muhammad Ali",
+                country: "Indonesia",
+                score: "Band 7.0",
+                comment: "The IELTS Speaking Guide is a must-have. The templates and vocabulary lists improved my fluency. I used 2 idioms during my test. The audio manifestation was a unique and effective tool. Thank you!"
+            },
+            {
+                name: "Hassan Khan",
+                country: "Pakistan",
+                score: "Band 7.5",
+                comment: "The  Writing Guide transformed my writing a lot. The templates and strategies helped me structure my essays quiickly. I highly recommend it for a better writing score!"
+            }
+        ];
+
+        class TestimonialCarousel {
+            constructor(testimonials) {
+                this.testimonials = testimonials;
+                this.currentSlide = 0;
+                this.carouselInner = document.getElementById('carousel-inner');
+                this.indicatorsContainer = document.getElementById('carousel-indicators');
+                this.prevBtn = document.getElementById('prev-btn');
+                this.nextBtn = document.getElementById('next-btn');
+
+                this.render();
+                this.addEventListeners();
+                this.startAutoSlide();
+            }
+
+            render() {
+                // Render slides
+                this.carouselInner.innerHTML = this.testimonials.map((t, index) => `
+                <div class="w-full flex-shrink-0 bg-white p-8 rounded-lg shadow-md ${index !== 0 ? 'hidden' : ''}">
+                    <div class="flex items-start mb-6">
+                        <span class="material-icons text-blue-500 mr-2 text-4xl">format_quote</span>
+                        <p class="text-gray-700 italic text-lg">${t.comment}</p>
+                    </div>
+                    <div class="flex justify-between items-center mt-4">
+                        <div>
+                            <p class="font-bold text-xl text-gray-900">${t.name}</p>
+                            <p class="text-sm text-gray-600">${t.country} | IELTS ${t.score}</p>
+                        </div>
+                        <div class="flex text-yellow-500">
+                            ${[...Array(5)].map(() => '<span class="material-icons">star</span>').join('')}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+                // Render indicators
+                this.indicatorsContainer.innerHTML = this.testimonials.map((_, index) => `
+                <button class="h-2 w-2 rounded-full ${index === 0 ? 'bg-blue-500' : 'bg-gray-300'} hover:bg-blue-400 transition" 
+                        data-slide="${index}"></button>
+            `).join('');
+            }
+
+            addEventListeners() {
+                this.prevBtn.addEventListener('click', () => this.prevSlide());
+                this.nextBtn.addEventListener('click', () => this.nextSlide());
+
+                this.indicatorsContainer.addEventListener('click', (e) => {
+                    if (e.target.matches('[data-slide]')) {
+                        this.goToSlide(parseInt(e.target.dataset.slide));
+                    }
+                });
+            }
+
+            nextSlide() {
+                this.goToSlide(this.currentSlide + 1);
+            }
+
+            prevSlide() {
+                this.goToSlide(this.currentSlide - 1);
+            }
+
+            goToSlide(index) {
+                const slides = this.carouselInner.children;
+                const indicators = this.indicatorsContainer.children;
+
+                // Normalize index
+                index = (index + this.testimonials.length) % this.testimonials.length;
+
+                // Hide current slide and indicator
+                slides[this.currentSlide].classList.add('hidden');
+                indicators[this.currentSlide].classList.remove('bg-blue-500');
+                indicators[this.currentSlide].classList.add('bg-gray-300');
+
+                // Show new slide and indicator
+                slides[index].classList.remove('hidden');
+                indicators[index].classList.remove('bg-gray-300');
+                indicators[index].classList.add('bg-blue-500');
+
+                this.currentSlide = index;
+            }
+
+            startAutoSlide() {
+                setInterval(() => this.nextSlide(), 7000);
+            }
+        }
+
+        // Initialize carousel
+        new TestimonialCarousel(testimonials);
+    </script>
+
+    <!-- Add scroll to top button -->
+    <button id="scrollToTop"
+        class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-blue-700"
+        style="display: none;" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <span class="material-icons">arrow_upward</span>
+    </button>
+
+    <script>
+        // Show/hide scroll to top button
+        window.onscroll = function () {
+            const scrollButton = document.getElementById('scrollToTop');
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                scrollButton.style.display = 'block';
+                scrollButton.style.opacity = '1';
+            } else {
+                scrollButton.style.opacity = '0';
+                setTimeout(() => {
+                    scrollButton.style.display = 'none';
+                }, 300);
+            }
+        };
+    </script>
+</body>
+
+</html>

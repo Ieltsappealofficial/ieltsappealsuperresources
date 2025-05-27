@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Resource Hub</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-background {
+            background: linear-gradient(45deg, #414453, #15420e, #b97e11);
+            background-size: 300% 300%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="gradient-background min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-3xl">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-3xl font-bold text-white mb-4 floating">Master IELTS with Expert Secrets</h1>
+            <p class="text-white text-xl">Unlock Band 8+ strategies other courses won't tell you!</p>
+            <p class="text-white text-xl">Practice only what you will see in the exam</p>
+
+        </div>
+
+        <!-- Attention-Grabbing Quiz -->
+        <div class="bg-white/90 backdrop-blur-md rounded-lg shadow-lg p-6 mb-8" id="quizSection">
+            <h2 class="text-lg font-bold text-orange-800 mb-3">🎯 Real IELTS Speaking Analysis</h2>
+            <p class="text-gray-700 mb-2 text-sm">Which answer would score higher?</p>
+            <div class="space-y-3">
+                <p class="text-gray-800 font-medium text-sm">Q: "How has technology changed modern work life?"</p>
+                
+                <label class="block bg-gray-100 p-3 rounded-lg cursor-pointer hover:bg-gray-50 transition-colors">
+                    <div class="flex items-start space-x-3">
+                        <input type="radio" name="answer" value="A" class="mt-1">
+                        <div class="text-sm text-gray-800">
+                            <span class="font-medium">Answer A:</span>
+                            <p class="italic mt-1">"Yeah, so basically technology has changed everything at work, you know? Like, now we got all these computers and phones to do our work from home, which is pretty cool. And it's way easier to talk to people and send stuff. Everything's just quicker and simpler now."</p>
+                        </div>
+                    </div>
+                </label>
+        
+                <label class="block bg-gray-100 p-3 rounded-lg cursor-pointer hover:bg-gray-50 transition-colors">
+                    <div class="flex items-start space-x-3">
+                        <input type="radio" name="answer" value="B" class="mt-1">
+                        <div class="text-sm text-gray-800">
+                            <span class="font-medium">Answer B:</span>
+                            <p class="italic mt-1">"Modern technology has revolutionized workplace dynamics, notably through virtual collaboration platforms. These innovations have transformed traditional office culture into a more agile, digitally-driven environment."</p>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        
+            <button onclick="checkAnswer()" class="mt-4 bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-lg w-full transition-all duration-300 transform hover:scale-105 text-sm">
+                Check Answer
+            </button>
+        
+            <div id="quizAnswer" class="hidden mt-3 p-3 bg-green-100 rounded-lg text-sm">
+                <p class="text-gray-800 mb-2">🌟 <strong>IELTS Expert Analysis: Why option B will get band 8? </strong></p>
+                <div class="space-y-1">
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Direct address → "revolutionized workplace dynamics"</li>
+                        <li>Specific example → "virtual collaboration platforms"</li>
+                        <li>Advanced vocabulary → "agile, digitally-driven environment"</li>
+                    </ul>
+                    <div class="bg-white/50 p-2 rounded mt-2">
+                        <p class="text-gray-700"><strong>Compare:</strong></p>
+                        <p class="text-gray-700">Basic: "got all these computers and phones" vs.</p>
+                        <p class="text-gray-700">Advanced: "virtual collaboration platforms"</p>
+                    </div>
+                </div>
+                <p class="mt-3 text-purple-600 font-medium">→ Get more Band 8+ templates below!</p>
+            </div>
+        </div>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const quizSection = document.getElementById('quizSection');
+                const answerPanel = document.getElementById('quizAnswer');
+                
+                // Add click handler for the check answer button
+                quizSection.querySelector('button').addEventListener('click', function() {
+                    const selectedAnswer = quizSection.querySelector('input[name="answer"]:checked');
+                    
+                    if (!selectedAnswer) {
+                        alert('Please select an answer first!');
+                        return;
+                    }
+                    
+                    // Apply visual feedback to selected answers
+                    const labels = quizSection.querySelectorAll('label');
+                    labels.forEach(label => {
+                        const radio = label.querySelector('input[type="radio"]');
+                        if (radio.value === 'B') {
+                            label.classList.add('bg-green-100', 'border-2', 'border-green-500');
+                        } else {
+                            label.classList.add('bg-red-50', 'border-2', 'border-red-300');
+                        }
+                        // Disable further selection
+                        radio.disabled = true;
+                    });
+                    
+                    // Show the analysis panel
+                    answerPanel.classList.remove('hidden');
+                    
+                    // Scroll to the analysis panel
+                    answerPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                });
+            });
+            </script>
+
+        <!-- Form Section -->
+        <div class="bg-white/90 backdrop-blur-md rounded-lg shadow-lg p-6 mb-8" id="formSection">
+            <h3 class="text-2xl font-bold text-orange-800 mb-4">🎁 Get Your Free Band 8+ Speaking Template Pack</h3>
+            <form id="emailForm" class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Full Name</label>
+                        <input type="text" required class="w-full p-3 border rounded-lg focus:ring focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" required class="w-full p-3 border rounded-lg focus:ring focus:ring-purple-500">
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Country</label>
+                        <input type="text" required class="w-full p-3 border rounded-lg focus:ring focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Test Date</label>
+                        <select required class="w-full p-3 border rounded-lg focus:ring focus:ring-purple-500">
+                            <option value="">Select date</option>
+                            <option value="this_month">This Month</option>
+                            <option value="2_months">In 2 Months</option>
+                            <option value="3_months">In 3 Months</option>
+                            <option value="6_months">In 6 Months</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class=" bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-lg w-full transition-all duration-300 transform hover:scale-105">
+                    Get Your Free Band 8+ Templates
+                </button>
+            </form>
+        </div>
+
+        <!-- Success Message -->
+        <div id="successMessage" class="hidden animate-fade-in">
+            <div class="bg-green-500 text-white p-6 rounded-lg mb-8 text-center">
+                <h3 class="text-2xl font-bold mb-2">🎉 Your Band 8+ speaking guide and Template is on their way via email!</h3>
+                <p class="text-lg">Meanwhile, unlock these premium resources to boost your score...</p>
+            </div>
+        </div>
+
+        <!-- Resource Buttons -->
+        <div class="space-y-4" id="resourceButtons">
+            <a href="#" class="block bg-white/90 backdrop-blur-md hover:bg-white transition-all duration-300 rounded-lg shadow-lg p-6 transform hover:scale-105 hover:rotate-1 group">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <span class="material-icons text-4xl text-purple-500 mr-4 group-hover:scale-110 transition-transform">psychology</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Speaking Mastery Guide</h3>
+                            <p class="text-gray-600">Learn the exact phrases examiners want to hear</p>
+                        </div>
+                    </div>
+                    <span class="material-icons text-purple-500 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                </div>
+            </a>
+
+            <a href="#" class="block bg-white/90 backdrop-blur-md hover:bg-white transition-all duration-300 rounded-lg shadow-lg p-6 transform hover:scale-105 hover:rotate-1 group">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <span class="material-icons text-4xl text-blue-500 mr-4 group-hover:scale-110 transition-transform">auto_stories</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Writing Success Formula</h3>
+                            <p class="text-gray-600">Copy these Band 8+ essay structures</p>
+                        </div>
+                    </div>
+                    <span class="material-icons text-blue-500 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                </div>
+            </a>
+
+            <a href="#" class="block bg-white/90 backdrop-blur-md hover:bg-white transition-all duration-300 rounded-lg shadow-lg p-6 transform hover:scale-105 hover:rotate-1 group">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <span class="material-icons text-4xl text-green-500 mr-4 group-hover:scale-110 transition-transform">headphones</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Listening Secret Techniques</h3>
+                            <p class="text-gray-600">Never miss a tricky answer again</p>
+                        </div>
+                    </div>
+                    <span class="material-icons text-green-500 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                </div>
+            </a>
+
+            <a href="#" class="block bg-white/90 backdrop-blur-md hover:bg-white transition-all duration-300 rounded-lg shadow-lg p-6 transform hover:scale-105 hover:rotate-1 group">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <span class="material-icons text-4xl text-red-500 mr-4 group-hover:scale-110 transition-transform">school</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Reading Speed Mastery</h3>
+                            <p class="text-gray-600">Double your reading speed in 7 days</p>
+                        </div>
+                    </div>
+                    <span class="material-icons text-red-500 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                </div>
+            </a>
+
+            <a href="#" class="block bg-white/90 backdrop-blur-md hover:bg-white transition-all duration-300 rounded-lg shadow-lg p-6 transform hover:scale-105 hover:rotate-1 group">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <span class="material-icons text-4xl text-yellow-500 mr-4 group-hover:scale-110 transition-transform">grade</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Advanced Vocabulary Guide</h3>
+                            <p class="text-gray-600"> The only 570 high-scoring IELTS Vocabulary  you will ever need!</p>
+                        </div>
+                    </div>
+                    <span class="material-icons text-yellow-500 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                </div>
+            </a>
+            <a href="#" class="block bg-white/90 backdrop-blur-md hover:bg-white transition-all duration-300 rounded-lg shadow-lg p-6 transform hover:scale-105 hover:rotate-1 group">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <span class="material-icons text-4xl text-red-500 mr-4 group-hover:scale-110 transition-transform">school</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Hero to Ultra Max Guaranteed +1 Band Improvement Course</h3>
+                            <p class="text-gray-600">7-14 days Course with advanced Tricks and Timesaving Strategies with Super Templates</p>
+                        </div>
+                    </div>
+                    <span class="material-icons text-red-500 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                </div>
+            </a>
+            <a href="#" class="block bg-white/90 backdrop-blur-md hover:bg-white transition-all duration-300 rounded-lg shadow-lg p-6 transform hover:scale-105 hover:rotate-1 group">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <span class="material-icons text-4xl text-red-500 mr-4 group-hover:scale-110 transition-transform">school</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">A beginner guide to Achive 7+ bands in 21 days</h3>
+                            <p class="text-gray-600">A comprehensive Guide to Master IELTS in 21 days with Super cuts and templates</p>
+                        </div>
+                    </div>
+                    <span class="material-icons text-red-500 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                </div>
+            </a>
+            <a href="#" class="block bg-white/90 backdrop-blur-md hover:bg-white transition-all duration-300 rounded-lg shadow-lg p-6 transform hover:scale-105 hover:rotate-1 group">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <span class="material-icons text-4xl text-red-500 mr-4 group-hover:scale-110 transition-transform">school</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">1:1 PERSONAL IELTS COACHING - Join the waitlist</h3>
+                            <p class="text-gray-600">Master IELTS with a personal Coach in a live class with anasysis </p>
+                        </div>
+                    </div>
+                    <span class="material-icons text-red-500 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                </div>
+            </a>
+
+            <a href="#" class="block bg-white/90 backdrop-blur-md hover:bg-white transition-all duration-300 rounded-lg shadow-lg p-6 transform hover:scale-105 hover:rotate-1 group">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <span class="material-icons text-4xl text-red-500 mr-4 group-hover:scale-110 transition-transform">school</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">1:1 Study Abroad Consultation with SOP and LOR</h3>
+                            <p class="text-gray-600"> Get personal Study Abroad Consultation with an Expert. All doubts cleared!</p>
+                        </div>
+                    </div>
+                    <span class="material-icons text-red-500 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                </div>
+            </a>
+
+            <a href="#" class="block bg-white/90 backdrop-blur-md hover:bg-white transition-all duration-300 rounded-lg shadow-lg p-6 transform hover:scale-105 hover:rotate-1 group">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <span class="material-icons text-4xl text-red-500 mr-4 group-hover:scale-110 transition-transform">school</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">1:1 Study Abroad Consultation with SOP and LOR</h3>
+                            <p class="text-gray-600"> Get personal Study Abroad Consultation with an Expert. All doubts cleared!</p>
+                        </div>
+                    </div>
+                    <span class="material-icons text-red-500 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                </div>
+            </a>
+            <a href="#" class="block bg-white/90 backdrop-blur-md hover:bg-white transition-all duration-300 rounded-lg shadow-lg p-6 transform hover:scale-105 hover:rotate-1 group">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <span class="material-icons text-4xl text-red-500 mr-4 group-hover:scale-110 transition-transform">school</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Complete IELTS Bundle ~60% Discount</h3>
+                            <p class="text-gray-600"> Get All our Premium pdfs to master IELTS Step by step guide</p>
+                        </div>
+                    </div>
+                    <span class="material-icons text-red-500 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                </div>
+            </a>
+            
+        </div>
+    </div>
+
+    <script>
+        function revealQuizAnswer() {
+            document.getElementById('quizAnswer').classList.remove('hidden');
+        }
+
+        document.getElementById('emailForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('formSection').style.display = 'none';
+            document.getElementById('quizSection').style.display = 'none';
+            document.getElementById('successMessage').classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
