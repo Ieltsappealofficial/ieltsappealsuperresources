@@ -690,7 +690,7 @@
             await set(push(ref(database, 'freeGuideSubmissions')), { name, country, email, examDate, timestamp: new Date().toISOString() });
             elements.successMessage.classList.remove('hidden');
             setTimeout(() => {
-                window.open("https://firebasestorage.googleapis.com/v0/b/ieltsappeal-f000c.appspot.com/o/pdf%20material%2FIeltsappeal%20Speaking%20Guide%20Free.pdf?alt=media&token=4fe02fad-af8a-4da4-a28e-f837c85acb3a", "_blank");
+                window.open("https://firebasestorage.googleapis.com/v0/b/ieltsappeal-f000c.appspot.com/o/pdf%20material%2FIeltsappeal%20Speaking%20Guide%20Free.pdf?alt=media&token=c9126021-b397-400a-b349-f4d8977a0354", "_blank");
                 setTimeout(() => { elements.successMessage.classList.add('hidden'); elements.popupModal.classList.add('hidden'); }, 3000);
             }, 2000);
         } catch (error) {
