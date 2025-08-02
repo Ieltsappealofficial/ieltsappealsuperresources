@@ -131,21 +131,17 @@
                 <a href="https://rzp.io/rzp/ITU0q4f" target="_blank" class="px-4 py-2 border border-orange-500 text-white bg-orange-500 rounded hover:bg-orange-600 hover:border-orange-600">Download Now!</a>
             </div>
         </div>
-        <!-- New Year Sale Section -->
-        <div class="bg-green-100 text-green-800 text-center py-3">
+        <!-- Fall Intake Sale Section -->
+        <div class="bg-green-300 text-orange-800 text-center py-3">
             <p class="text-xs font-semibold">
-                🎉 New Year Sale! Get ~60% OFF on bundle purchases. Offer ends in <span id="countdown" class="font-bold text-green-900"></span>.
+                🍂 Fall Intake Sale! Get ~60% OFF on bundle purchases. Limited Time Offer!
             </p>
-            <p class="text-xs font-semibold mt-2">
-                🚨 First 20 candidates get <span class="font-bold">1 extra Writing and Speaking evaluations</span> FREE! For the <span class="text-red-600 font-bold">first 20 candidates only. 7 seats</span> left! 🚨
-            </p>
-            <div class="w-full bg-gray-200 rounded-full h-2.5 mx-auto mt-2" style="max-width: 200px;">
-                <div class="bg-orange-500 h-2.5 rounded-full" style="width: 65%;"></div>
-            </div>
+           
+            
         </div>
         <script>
             function updateCountdown() {
-                const saleEndDate = new Date("January 31, 2025 23:59:59 GMT"); // Updated to January 5th
+                const saleEndDate = new Date("August 31, 2025 23:59:59 GMT"); // Updated to August 31st for Fall intake
                 const now = new Date();
                 const timeDiff = saleEndDate - now;
                 if (timeDiff <= 0) {
@@ -204,16 +200,20 @@
     </section>
 
     <!-- Sticky Timer Bar -->
-    <div class="sticky-timer-bar font-bold"
-        style="position: sticky; top: 0; background: #3B82F6; color: white; padding: 8px; text-align: center; z-index: 1000; font-family: system-ui, -apple-system, sans-serif; font-size: 12px;">
-        <span>⏳ Get a Premium 1:1 Study Abroad Consultation 100% Free with the Complete IELTS Bundle Purchase! Offer ends in </span>
-        <span id="timer" style="font-weight: bold; font-size: 16px;"></span>
-        <a href="https://rzp.io/rzp/ITU0q4f" target="_blank"
-            class="px-4 py-2 border border-orange-500 text-white bg-orange-500 rounded hover:bg-orange-600 hover:border-orange-600">I want this!</a>
-
-        <div class="progress-bar"
-            style="width: 100%; height: 4px; background: #e0e0e0; border-radius: 2px; margin-top: 8px;">
-            <div id="progress" style="height: 100%; background: #FFD700; border-radius: 2px; width: 100%;"></div>
+    <div class="sticky-timer-bar" style="position: sticky; top: 0; background: #3B82F6; color: white; padding: 8px 12px; z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+        <div class="flex items-center justify-between text-xs md:text-sm">
+            <div class="flex items-center space-x-2 md:space-x-3 flex-1 min-w-0">
+                <span class="text-sm md:text-base">⏳</span>
+                <span class="font-medium truncate">Get an extra Writing evaluation FREE with the Bundle purchased!</span>
+            </div>
+            <div class="flex items-center space-x-2 md:space-x-3 flex-shrink-0">
+                <span id="timer" class="font-bold bg-white bg-opacity-20 px-2 py-1 rounded text-xs md:text-sm min-w-[80px] md:min-w-[100px] text-center text-blue-900 font-mono"></span>
+                <a href="https://rzp.io/rzp/ITU0q4f" target="_blank"
+                    class="px-3 py-1 md:px-4 md:py-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded text-xs md:text-sm transition-colors duration-200 whitespace-nowrap">Get the Bundle!</a>
+            </div>
+        </div>
+        <div class="w-full bg-white bg-opacity-20 rounded-full h-0.5 mt-2">
+            <div id="progress" class="bg-yellow-400 h-0.5 rounded-full transition-all duration-300" style="width: 75%;"></div>
         </div>
     </div>
     <script>
@@ -241,11 +241,10 @@
             const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
-            const milliseconds = Math.floor(remainingTime % 1000);
-            document.getElementById('timer').textContent = `${hours}h ${minutes}m ${seconds}s ${milliseconds}ms`;
+            document.getElementById('timer').textContent = `${hours.toString().padStart(2, '0')}h ${minutes.toString().padStart(2, '0')}m ${seconds.toString().padStart(2, '0')}s`;
             const progressPercent = (remainingTime / timerDuration) * 100;
             document.getElementById('progress').style.width = `${progressPercent}%`;
-            setTimeout(updateTimer, 10);
+            setTimeout(updateTimer, 1000);
         }
         document.addEventListener('DOMContentLoaded', function () {
             if (!localStorage.getItem('timerStartTime')) {
@@ -270,7 +269,6 @@
     <section class="bg-gray-100 py-12 px-6">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">14-Day Band Improvement Challenge</h2>
-            <h2 class="text-1xl md:text-2xl font-bold text-gray-800 mb-4">@ just 10-14 hours a week</h2>
 
             <p class="text-gray-600 mb-8">Follow our proven roadmap to master IELTS in just 14 days. Interactive and
                 step-by-step guidance to help you succeed go from Band 6 to 8 within 2 weeks</p>
@@ -438,7 +436,7 @@
     <!-- Testimonials Section -->
     <section class="max-w-4xl mx-auto px-4 py-12">
         <div class="text-center mb-10">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">What Our Students Say</h2>
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Trusted by 1000+ Aspirants</h2>
             <p class="text-gray-600">Requested success stories from our Aspirants after using our materials</p>
         </div>
         <div class="relative">
@@ -910,8 +908,8 @@ products.forEach(product => {
                                     <li class="flex items-center"><span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>Writing and Speaking Practice cue cards</li>
                                 ` : ''}
                                 ${product.id === 'prediction' ? `
-                                    <li class="flex items-center"><span class="material-icons text-green-500 mr-2 text-sm">check_circle</span> January Prediction</li>
-                                    <li class="flex items-center"><span class="material-icons text-green-500 mr-2 text-sm">check_circle</span> February Prediction</li>
+                                    <li class="flex items-center"><span class="material-icons text-green-500 mr-2 text-sm">check_circle</span> August Prediction</li>
+                                    <li class="flex items-center"><span class="material-icons text-green-500 mr-2 text-sm">check_circle</span> September Prediction</li>
                                     <li class="flex items-center"><span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>Speaking & Writing Focused</li>
                                     <li class="flex items-center"><span class="material-icons text-green-500 mr-2 text-sm">check_circle</span>80 % Accuracy</li>
                                 ` : ''}
